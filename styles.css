@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+#addNote {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#addNote:hover {
+    background-color: #0056b3;
+}
+
+#notes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.note {
+    background-color: yellow;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    cursor: move;
+    font-family: Arial, sans-serif;
+}
+
+.note textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    resize: none;
+    font-size: 14px;
+    outline: none;
+    font-family: Arial, sans-serif;
+}
+
+.note button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.color-picker {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    display: flex;
+    gap: 5px;
+}
+
+.color-picker div {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
